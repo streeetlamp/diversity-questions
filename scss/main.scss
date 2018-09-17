@@ -1,0 +1,122 @@
+@import 'normal';
+@import 'vars';
+
+html {
+  background: $light-bg-color;
+  font-family: 'Arimo', sans-serif;
+}
+body {
+  height: 100vh;
+}
+
+#app {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 40px;
+}
+
+#app > div {
+  border: solid 1px $bright-purp;
+  border-radius: 2px;
+  padding: 60px 40px;
+  color: $dark-purp;
+  align-self: center;
+  font-size: 1.75rem;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.12), 0 3px 6px rgba(0,0,0,0.18);
+  background: #f5f5f5;
+  height: 30vh;
+  width: 85vw;
+  display: block;
+  margin: 0 auto;
+  letter-spacing: 1px;
+  line-height: 1.35;
+  p {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: auto;
+    padding: 15px 0; margin: 0 0 20px 0;
+    border-top: 2px solid $bright-purp;
+    border-bottom: 2px solid $bright-purp;
+  }
+  input[type=button] {
+    display: block;
+    margin: 0 auto;
+    margin-top: -40px;
+    font-size: 1.2rem;
+    -webkit-appearance: none;
+    background: white;
+    border: 2px solid $bright-purp;
+    outline: none;
+    padding: 10px 15px;
+    border-radius: 2px;
+    transition: background .15s ease-in-out;
+    &:hover, &:focus {
+      background: #5FABE8;
+      cursor: pointer;
+    }
+  }
+}
+/* 
+#app > div:before {
+  border: 1px solid black;
+  border-radius: 5px;
+  position: fixed;
+  content: '';
+  z-index: -1;
+  color: whitesmoke;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  font-size: 24px;
+  background: #192022;
+  height: 85vh;
+  width: 30vw;
+  letter-spacing: 1px;
+  left: 0;
+}
+#app > div:after {
+  border: 1px solid black;
+  border-radius: 5px;
+  position: fixed;
+  content: '';
+  z-index: -1;
+  color: whitesmoke;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  font-size: 24px;
+  background: #192022;
+  height: 85vh;
+  width: 30vw;
+  letter-spacing: 1px;
+  right: 0;
+} */
+
+#app > div > a {
+  color: #333;
+  text-decoration: none;
+}
+
+#app a {
+  color: #5FABE8;
+  text-decoration: none;
+}
+
+#app > div + div {
+  margin-top: -1px;
+}
+
+#app small a {
+  color: #999;
+}
+
+#app a.shit-box {
+  font-size: 1rem;
+  border-bottom: 1px solid $bright-purp;
+  padding-bottom: 4px;
+  color: $green;
+  display: inline-block;
+  position: relative;
+  margin-top: 25px;
+}
